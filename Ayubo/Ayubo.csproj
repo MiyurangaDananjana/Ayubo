@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{087E79CC-4C6B-4869-831D-5EFD72A0B8CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ayubo</RootNamespace>
+    <AssemblyName>Ayubo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Day_tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Day_tour.Designer.cs">
+      <DependentUpon>Day_tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Long_tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Long_tour.Designer.cs">
+      <DependentUpon>Long_tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent Calculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent Calculation.Designer.cs">
+      <DependentUpon>Rent Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package.Designer.cs">
+      <DependentUpon>Package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Vehicle.Designer.cs">
+      <DependentUpon>New Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent_History.Designer.cs">
+      <DependentUpon>Rent_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlCeDataReader.cs" />
+    <Compile Include="Type And Price.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Type And Price.Designer.cs">
+      <DependentUpon>Type And Price.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Day_tour.resx">
+      <DependentUpon>Day_tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Long_tour.resx">
+      <DependentUpon>Long_tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent Calculation.resx">
+      <DependentUpon>Rent Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package.resx">
+      <DependentUpon>Package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Vehicle.resx">
+      <DependentUpon>New Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent_History.resx">
+      <DependentUpon>Rent_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Type And Price.resx">
+      <DependentUpon>Type And Price.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ford-f-150-raptor-3840x2160-race-truck-9522.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-BMW-M3-iPhone-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d770e5fadca6c178af2233b1751eabd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d770e5fadca6c178af2233b1751eabd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d770e5fadca6c178af2233b1751eabd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21a6670d4e48ed4af87496002abdee8a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bentley-mulsanne-3840x2160-interior-luxury-cars-bentley-flying-b-2083.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018_toyota_land_cruiser_luxury_suv_4k-HD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bentley-mulsanne-3840x2160-interior-luxury-cars-bentley-flying-b-20831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af6816ec67ec51da6b275a4aa08d236c-lock-circle-icon-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018_toyota_land_cruiser_luxury_suv_4k-HD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papers1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21a6670d4e48ed4af87496002abdee8a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bentley-mulsanne-3840x2160-interior-luxury-cars-bentley-flying-b-20832.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papers3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
